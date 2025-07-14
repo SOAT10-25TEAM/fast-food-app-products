@@ -10,7 +10,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "http://localhost:3002/fastfood-products-api",
+        url: "http://localhost:3003/fastfood-products-api",
       },
     ],
   },
