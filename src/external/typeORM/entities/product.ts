@@ -7,7 +7,6 @@ import {
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { CategoryEntity } from "./category";
-import { OrderItemEntity } from "./orderItem";
 
 @Entity("products")
 export class ProductEntity {
@@ -30,6 +29,4 @@ export class ProductEntity {
   @JoinColumn({ name: "category_id" })
   category: CategoryEntity;
 
-  @OneToMany(() => OrderItemEntity, (orderItem) => orderItem.product)
-  orderItems: OrderItemEntity[];
 }

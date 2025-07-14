@@ -1,10 +1,7 @@
 // adapters/typeORM/TypeORMConfig.ts
 import { DataSource } from "typeorm";
-import { UserEntity } from "./entities/user";
 import { ProductEntity } from "./entities/product";
-import { OrderEntity } from "./entities/order";
 import { CategoryEntity } from "./entities/category";
-import { OrderItemEntity } from "./entities/orderItem";
 import "dotenv/config";
 
 export const AppDataSource = new DataSource({
@@ -17,11 +14,8 @@ export const AppDataSource = new DataSource({
   logging: true,
   synchronize: false,
   entities: [
-    UserEntity,
     ProductEntity,
-    OrderEntity,
-    CategoryEntity,
-    OrderItemEntity,
+    CategoryEntity
   ],
   migrations: [__dirname + "/migrations/*.{ts,js}"],
 });
