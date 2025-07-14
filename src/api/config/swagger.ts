@@ -10,14 +10,12 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "http://localhost:3002/soat-api",
+        url: "http://localhost:3002/fastfood-products-api",
       },
     ],
   },
   apis: [
-    "./src/User/routes/*.ts",
-    "./src/Product/routes/*.ts",
-    "./src/Order/routes/*.ts",
+    "./src/Product/routes/*.ts"
   ],
 };
 
