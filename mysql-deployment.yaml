@@ -35,4 +35,4 @@ spec:
                   name: app-secrets
                   key: MYSQL_PASSWORD
           ports:
-            - containerPort: 3306
+            - containerPort: 3307

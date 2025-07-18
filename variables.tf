@@ -8,7 +8,7 @@ variable "db_identifier" {
   description = "Identificador único do RDS"
 }
 
-variable "db_name" {
+variable "db_product" {
   type = string
   description = "Nome do DB"
 }

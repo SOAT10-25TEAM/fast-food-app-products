@@ -73,8 +73,8 @@ resource "aws_security_group" "rds_sg" {
   vpc_id      = aws_vpc.soat_vpc.id
 
   ingress {
-    from_port   = 3306
-    to_port     = 3306
+    from_port   = 3307
+    to_port     = 3307
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]  
   }
@@ -98,7 +98,7 @@ resource "aws_db_instance" "default" {
   instance_class          = "db.t3.micro"
   allocated_storage       = 20
   max_allocated_storage   = 100
-  db_name                 = var.db_name
+  db_name                 = var.db_product
   username                = var.db_username
   password                = var.db_password
   publicly_accessible     = true  
