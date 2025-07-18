@@ -14,7 +14,7 @@ spec:
             [
               "sh",
               "-c",
-              'until nc -z -v -w30 mysql-service 3306; do echo "Waiting for database..."; sleep 5; done',
+              'until nc -z -v -w30 mysql-service 3307; do echo "Waiting for database..."; sleep 5; done',
             ]
       containers:
         - name: migrate
